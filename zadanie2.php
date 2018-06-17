@@ -17,7 +17,6 @@
 	</div>
 	<div id = "wynik">
 		<?php
-			//$url = "";
 			if(isset($_GET['page_url'])){
 				$url = $_GET["page_url"];
 				//echo "<p style = 'padding: 3px 0 3px 0;'>";
@@ -31,8 +30,7 @@
 			}
 			error_reporting(E_ERROR | E_PARSE);
 			crawler($url);
-			
-			// http://php.net/manual/en/class.domdocument.php
+
 			function crawler($url) { 
 				// stworzenie pustego DOM Documentu, który przechowuje strukture strony
 				$adres = new DOMDocument(); 
